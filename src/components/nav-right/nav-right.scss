@@ -1,0 +1,66 @@
+@import '../../styles/variables.scss';
+
+.nav-right {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-right__item {
+    padding: 2px;
+    /* position: relative; */
+}
+
+.nav-right__cart-icon {
+    cursor: pointer;
+}
+
+
+
+
+.nav-right__cart-icon,
+.nav-right__heart-icon {
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+}
+
+.nav-right__cart-icon:hover,
+.nav-right__heart-icon:hover {
+    color: $mainPink;
+}
+
+.nav-right__item-cart {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-right__item-cart span {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-left: 5px;
+    padding: 1px;
+    color: #000;
+}
+
+@media screen and (max-width:480px) {
+
+    .nav-right__cart-icon,
+    .nav-right__heart-icon {
+        font-size: 24px;
+    }
+
+    .nav-right {
+        gap: 8px;
+    }
+
+    .nav-right__item-cart span {
+        width: 20px;
+        height: 20px;
+    }
+}

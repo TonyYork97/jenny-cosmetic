@@ -1,0 +1,108 @@
+.order-page {
+  padding: 88px 0;
+  min-height: 100vh;
+
+  .order {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    .title {
+      font-size: 32px;
+    }
+
+    .flex-block {
+      display: flex;
+      gap: 44px;
+      align-items: flex-start;
+
+      .contact-block {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .info {
+          color: #fff;
+          font-size: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          overflow: hidden;
+
+          .info-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            user-select: none;
+
+            .number {
+              width: 24px;
+              height: 24px;
+              border: 2px solid #fff;
+              border-radius: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            h3 {}
+          }
+
+          .input-block {
+            padding-left: 36px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            height: 0px;
+            transition: all 0.3s ease;
+
+            input {
+              padding: 12px;
+              border: 1px solid #fff;
+              border-radius: 3px;
+              background-color: transparent;
+              color: #fff;
+            }
+          }
+
+          .open {
+            transition: all 0.3s ease;
+            height: 220px;
+          }
+        }
+      }
+
+      .cart-block {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        h3 {
+          font-size: 20px;
+          text-decoration: underline;
+        }
+
+        .order-goods {}
+
+        .price-block {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          font-size: 16px;
+
+          .price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+
+            .bold {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

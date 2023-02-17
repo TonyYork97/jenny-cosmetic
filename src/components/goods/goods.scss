@@ -1,0 +1,105 @@
+@import '../../styles/variables.scss';
+
+.goods {
+    padding: 72px 0 50px 0;
+    margin-bottom: 24px;
+}
+
+.goods__navigation {
+    padding: 20px 0px;
+    font-size: 14px;
+    color: $mainPink;
+}
+
+.goods_nav-span {
+    cursor: pointer;
+}
+
+.goods__block {
+    display: flex;
+    gap: 40px;
+}
+
+.goods__images {
+    // width: 50%;
+    display: flex;
+}
+
+.goods__images-min {
+    /* width: 15%; */
+    padding-right: 10px;
+}
+
+.goods__image-min {
+    max-width: 200px;
+    height: 110px;
+    overflow: hidden;
+}
+
+.goods__images-min img {
+    width: 100%;
+}
+
+.goods__image {
+    max-width: 480px;
+    width: 100%;
+    height: 560px;
+    overflow: hidden;
+    // height: 600px;
+}
+
+.goods__image img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.goods__text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.goods__title {
+    font-size: 32px;
+    // font-weight: bold;
+}
+
+.goods__price {
+    font-size: 24px;
+}
+
+.goods__action {
+    display: flex;
+    align-items: center;
+
+}
+
+.goods__favorites {
+    position: relative;
+    // width: 80px;
+    top: -30px;
+    right: -80px;
+    // transform: translateY(-12px);
+}
+
+@media screen and (max-width: 768px) {
+    .goods__title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .goods__block {
+        flex-direction: column;
+        gap: 24px;
+
+    }
+
+    .goods__image {
+        max-width: 100%;
+        height: 380px;
+    }
+
+
+}

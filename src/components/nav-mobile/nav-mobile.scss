@@ -1,0 +1,65 @@
+@import '../../styles/variables.scss';
+
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  z-index: 99;
+  overflow: auto;
+
+  .close-menu {
+    position: absolute;
+    top: 15px;
+    left: 9px;
+  }
+
+
+  .nav-mobile-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+    height: 100%;
+
+    .nav-mobile-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+
+
+
+      .nav-mobile-li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+        a {
+          font-size: 24px;
+          color: #fff;
+
+          &:hover {
+            color: $mainPink;
+          }
+
+        }
+
+        .nav-mobule_submenu-link {
+          font-size: 18px;
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .nav-mobile {
+    display: none;
+  }
+}

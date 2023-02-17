@@ -1,0 +1,34 @@
+.main-container {
+    height: 720px;
+    width: 100%;
+    /* display: flex;
+    align-items: center; */
+    position: relative;
+}
+
+.window {
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+    overflow: hidden;
+}
+
+.all-pages-container {
+    height: 100%;
+    display: flex;
+    transition: translate;
+    transition-property: transform;
+    /* transition-duration: 0.3s; */
+    transition-timing-function: ease-in-out;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    z-index: 50;
+    top: 50%;
+}
+
+.arrow-right {
+    right: 0;
+}

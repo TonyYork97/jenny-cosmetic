@@ -1,0 +1,429 @@
+[
+    {
+        "id": "1",
+        "title": "ночной крем для лица",
+        "image": "images/cosmetics/ночной крем для лица.jpg",
+        "price": 779,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "основной уход",
+            "очищение",
+            "специальный уход"
+        ],
+        "description": "Ночной крем для лица"
+    },
+    {
+        "id": "2",
+        "title": "крем против прыщей",
+        "image": "/images/cosmetics/крем против прыщей.jpg",
+        "price": 580,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "очищение",
+            "специальный уход"
+        ],
+        "description": "крем против прыщей"
+    },
+    {
+        "id": "3",
+        "title": "крем для проблемной кожи",
+        "image": "/images/cosmetics/крем для проблемной кожи.jpg",
+        "price": 650,
+        "count": 0,
+        "category": "уход для тела",
+        "subCategory": [
+            "основной уход"
+        ],
+        "description": "крем для проблемной кожи"
+    },
+    {
+        "id": "4",
+        "title": "солнцезащитный крем",
+        "image": "/images/cosmetics/солнцезащитный крем.jpg",
+        "price": 480,
+        "count": 0,
+        "category": "уход для тела",
+        "subCategory": [
+            "основной уход"
+        ],
+        "description": "солнцезащитный крем"
+    },
+    {
+        "id": "5",
+        "title": "бальзам для волос",
+        "image": "/images/cosmetics/бальзам для волос.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для волос",
+        "subCategory": [
+            "бальзамы"
+        ],
+        "description": "бальзам для волос"
+    },
+    {
+        "id": "6",
+        "title": "гель для душа",
+        "image": "/images/cosmetics/гель для душа.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для тела",
+        "subCategory": [
+            "для душа и ванны"
+        ],
+        "description": "гель для душа"
+    },
+    {
+        "id": "7",
+        "title": "востанавливающий крем для лица",
+        "image": "/images/cosmetics/востанавливающий крем.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "основной уход"
+        ],
+        "description": "востанавливающий крем"
+    },
+    {
+        "id": "8",
+        "title": "сыворотка против пигментации",
+        "image": "/images/cosmetics/сыворотка против пигментации.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "основной уход"
+        ],
+        "description": "сыворотка против пигментации"
+    },
+    {
+        "id": "9",
+        "title": "анти-возростная сыворотка",
+        "image": "/images/cosmetics/анти-возростная сыворотка.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "основной уход"
+        ],
+        "description": "анти-возростная сыворотка"
+    },
+    {
+        "id": "10",
+        "title": "сыворотка для проблемной кожи",
+        "image": "/images/cosmetics/сыворотка для проблемной кожи.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "основной уход"
+        ],
+        "description": "сыворотка для проблемной кожи"
+    },
+    {
+        "id": "11",
+        "title": "востонавливающая сыворотка для всех типо кожи",
+        "image": "/images/cosmetics/востонавливающая сыворотка для всех типо кожи.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "основной уход"
+        ],
+        "description": "востонавливающая сыворотка для всех типо кожи"
+    },
+    {
+        "id": "12",
+        "title": "дневная сыворотка для лица",
+        "image": "/images/cosmetics/дневная сыворотка для лица.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "основной уход"
+        ],
+        "description": "дневная сыворотка для лица"
+    },
+    {
+        "id": "13",
+        "title": "ночная сыворотка для лица",
+        "image": "/images/cosmetics/ночная сыворотка для лица.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "основной уход"
+        ],
+        "description": "ночная сыворотка для лица"
+    },
+    {
+        "id": "14",
+        "title": "скраб для тела",
+        "image": "/images/cosmetics/скраб для тела.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для тела",
+        "subCategory": [
+            "для душа и ванны"
+        ],
+        "description": "скраб для тела"
+    },
+    {
+        "id": "15",
+        "title": "гель для снятия макияжа",
+        "image": "/images/cosmetics/гель для снятия макияжа.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "очищение"
+        ],
+        "description": "гель для снятия макияжа"
+    },
+    {
+        "id": "16",
+        "title": "скраб для лица",
+        "image": "/images/cosmetics/скраб для лица.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "очищение"
+        ],
+        "description": "скраб для лица"
+    },
+    {
+        "id": "17",
+        "title": "термозащита для волос",
+        "image": "/images/cosmetics/термозащита для волос.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для волос",
+        "subCategory": [
+            "основной уход"
+        ],
+        "description": "термозащита для волос"
+    },
+    {
+        "id": "18",
+        "title": "освежающий спрей для лица",
+        "image": "/images/cosmetics/освежающий спрей для лица.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "специальный уход"
+        ],
+        "description": "освежающий спрей для лица"
+    },
+    {
+        "id": "19",
+        "title": "спрей для тела",
+        "image": "/images/cosmetics/спрей для тела.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для тела",
+        "subCategory": [
+            "основной уход"
+        ],
+        "description": "спрей для тела"
+    },
+    {
+        "id": "20",
+        "title": "скраб для кожи головы",
+        "image": "/images/cosmetics/скраб для кожи головы.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для волос",
+        "subCategory": [
+            "специальный уход"
+        ],
+        "description": "скраб для кожи головы"
+    },
+    {
+        "id": "21",
+        "title": "подарочный набор для лица",
+        "image": "/images/cosmetics/подарочный набор для лица.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "подарочные наборы",
+        "subCategory": [],
+        "description": "подарочный набор для лица"
+    },
+    {
+        "id": "22",
+        "title": "подарочный набор сывороток",
+        "image": "/images/cosmetics/подарочный набор сывороток.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "подарочные наборы",
+        "subCategory": [],
+        "description": "подарочный набор сывороток"
+    },
+    {
+        "id": "23",
+        "title": "подарочный набор для тела",
+        "image": "/images/cosmetics/подарочный набор для тела.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "подарочные наборы",
+        "subCategory": [],
+        "description": "подарочный набор для тела"
+    },
+    {
+        "id": "24",
+        "title": "патчи для глаз",
+        "image": "/images/cosmetics/патчи для глаз.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "патчи"
+        ],
+        "description": "патчи для глаз"
+    },
+    {
+        "id": "25",
+        "title": "база под макияж",
+        "image": "/images/cosmetics/база под макияж.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "макияж",
+        "subCategory": [
+            "лицо"
+        ],
+        "description": "база под макияж"
+    },
+    {
+        "id": "26",
+        "title": "тональный крем",
+        "image": "/images/cosmetics/тональный крем.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "макияж",
+        "subCategory": [
+            "лицо"
+        ],
+        "description": "тональный крем"
+    },
+    {
+        "id": "27",
+        "title": "помада для губ",
+        "image": "/images/cosmetics/помада для губ.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "макияж",
+        "subCategory": [
+            "губы"
+        ],
+        "description": "помада для губ"
+    },
+    {
+        "id": "28",
+        "title": "гелевая маска для проблемной кожи",
+        "image": "/images/cosmetics/гелевая маска для проблемной кожи.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "маски"
+        ],
+        "description": "гелевая маска для проблемной кожи"
+    },
+    {
+        "id": "29",
+        "title": "расслабляющая маска",
+        "image": "/images/cosmetics/расслабляющая маска.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "маски"
+        ],
+        "description": "расслабляющая маска"
+    },
+    {
+        "id": "30",
+        "title": "парфюм",
+        "image": "/images/cosmetics/парфюм.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "парфюмерия",
+        "subCategory": [],
+        "description": "парфюм"
+    },
+    {
+        "id": "31",
+        "title": "пудра для лица",
+        "image": "/images/cosmetics/пудра для лица.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "макияж",
+        "subCategory": [
+            "лицо"
+        ],
+        "description": "пудра для лица"
+    },
+    {
+        "id": "32",
+        "title": "сухой шампунь",
+        "image": "/images/cosmetics/сухой шампунь.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для волос",
+        "subCategory": [
+            "шампуни"
+        ],
+        "description": "сухой шампунь"
+    },
+    {
+        "id": "33",
+        "title": "крем для тела",
+        "image": "/images/cosmetics/крем для тела.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для тела",
+        "subCategory": [
+            "основной уход"
+        ],
+        "description": "крем для тела"
+    },
+    {
+        "id": "34",
+        "title": "дневной крем для лица",
+        "image": "/images/cosmetics/дневной крем для лица.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для лица",
+        "subCategory": [
+            "основной уход"
+        ],
+        "description": "дневной крем для лица"
+    },
+    {
+        "id": "35",
+        "title": "шампунь для кожи головы",
+        "image": "/images/cosmetics/шампунь для кожи головы.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "уход для волос",
+        "subCategory": [
+            "шампуни"
+        ],
+        "description": "шампунь для кожи головы"
+    },
+    {
+        "id": "36",
+        "title": "матовая помада для губ",
+        "image": "/images/cosmetics/матовая помада для губ.jpg",
+        "price": 940,
+        "count": 0,
+        "category": "макияж",
+        "subCategory": [
+            "губы"
+        ],
+        "description": "матовая помада для губ"
+    }
+]

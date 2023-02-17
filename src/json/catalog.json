@@ -1,0 +1,27 @@
+[
+  {
+      "title": "все товары",
+      "link": "/all-catalog"
+  },
+  {
+      "title": "уход для лица",
+      "link": "/catalog/facial-care"
+  },
+  {
+      "title": "уход для тела",
+      "link": "/catalog/body-care"
+  },
+  {
+      "title": "уход для волос",
+      "link": "/catalog/hair-care"
+  },
+  {
+      "title": "макияж",
+      "link": "/catalog/makeup"
+  },
+  {
+      "title": "подарочные наборы",
+      "link": "/catalog/gift"
+  }
+
+]

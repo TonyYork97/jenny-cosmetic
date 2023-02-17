@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+.catalog-title {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.catalog-title__title {
+    margin-bottom: 15px;
+}
+
+.catalog-title__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    color: #3F5153;
+}
+
+.catalog-title__left-title {
+    font-size: 4rem;
+    font-weight: 300;
+    padding: 5px;
+    line-height: 60px;
+
+
+}
+
+.catalog-title__left-title-h2 {
+    font-size: 3rem;
+    text-align: right;
+}
+
+.catalog-title__right {
+    width: 300px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+
+}

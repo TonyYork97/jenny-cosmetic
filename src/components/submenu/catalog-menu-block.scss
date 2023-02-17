@@ -1,0 +1,44 @@
+@import '../../styles/variables.scss';
+
+.catalog-menu {
+    position: absolute;
+    width: 220px;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 90px;
+    /* left: 2%; */
+    box-shadow: 0px 1px 10px 0px #00000042;
+}
+
+.catalog-menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.catalog-menu__list li {
+    position: relative;
+    text-align: center;
+}
+
+.catalog-menu a {
+    padding: 5px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    transition: all 0.1s ease;
+
+    &:hover {
+        color: $mainPink;
+        border-bottom: 1px solid $mainPink;
+    }
+}

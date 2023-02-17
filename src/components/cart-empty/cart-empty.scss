@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.cart-empty {
+    padding: 60px;
+    text-align: center;
+}
+
+.cart-empty__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.cart-empty__text a {
+    color: $mainPink;
+}

@@ -1,0 +1,88 @@
+.all-pages-container {
+    .bg-block {
+        width: 100%;
+        min-height: 480px;
+        height: 100vh;
+
+        .slider-text {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            .slider-text-block {
+                position: absolute;
+                padding: 24px;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 5%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+
+                span {
+                    font-size: 13px;
+                    align-self: flex-start;
+                }
+
+                h2 {
+                    font-weight: bold;
+                    text-align: left;
+
+                }
+
+                p {
+                    text-transform: uppercase;
+                    text-align: left;
+                    max-width: 400px;
+                    width: 100%;
+                }
+
+                .link {
+                    display: block;
+                    background-color: #000;
+                    color: white;
+                    border: 1px solid #D73171;
+                    padding: 20px 45px;
+                    font-size: 12px;
+                    word-spacing: 3px;
+                    border-radius: 3px;
+                    color: white;
+                    background-image: linear-gradient(45deg, #00000000 50%, #D73171 50%);
+                    // background-image: linear-gradient(to right, #00000000, #00000000, #D73171);
+                    background-size: 300% 100%;
+                    transition: all .4s ease;
+
+                    &:hover {
+                        background-position: 70%;
+
+                    }
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                .slider-text-block {
+                    left: 0;
+                    padding: 8px;
+
+                    h2 {
+                        font-size: 32px;
+                    }
+                }
+            }
+
+            @media screen and (max-height: 500px) {
+                .slider-text-block {
+                    gap: 12px;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+    }
+}

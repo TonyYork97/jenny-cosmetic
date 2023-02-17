@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.nav {
+    display: flex;
+
+    .nav__menu-icon {
+        width: 24px;
+        height: 24px;
+        display: none;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .nav__item {
+        display: flex;
+
+        .nav__link {
+            padding: 15px;
+            font-size: 14px;
+            color: white;
+            transition: all 0.1s ease;
+
+            &:hover {
+                color: $mainPink;
+                border-bottom: 1px solid $mainPink;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .nav {
+        .nav__menu-icon {
+            display: block;
+        }
+
+        .nav__item {
+            display: none;
+        }
+    }
+}

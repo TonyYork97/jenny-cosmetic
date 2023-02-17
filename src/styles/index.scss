@@ -1,0 +1,252 @@
+/*Обнуление*/
+/* @font-face {
+  font-family: 'Mac';
+  src: url("../public/fonts/Mak\ font/Web/MAK.eot");
+} */
+@import './variables.scss';
+
+@font-face {
+  font-family: "Mak";
+  src: url("../../public/fonts/Mak\ font/MAK.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mak";
+  src: url("../../public/fonts/Mak\ font/MAK-bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: bold;
+}
+
+
+@font-face {
+  font-family: "Mak-cursive";
+  src: url("../../public/fonts/Mak\ font/Web/MAK.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mak-cursive";
+  src: url("../../public/fonts/Mak\ font/Web/MAK-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: bold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  scroll-behavior: smooth;
+}
+
+#root {
+  height: 100%;
+}
+
+* {
+  font-family: sans-serif, serif, Arial, Helvetica;
+  letter-spacing: 1px;
+
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: #000;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input:hover,
+input:active,
+input:focus {
+  outline: none;
+
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  font-size: 13px;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+
+  color: #fff;
+}
+
+h6 {
+  display: inline-block;
+}
+
+a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/*--------------------*/
+
+
+body {
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+a {
+  cursor: pointer;
+}
+
+.hr {
+  height: 200vh;
+}
+
+div {
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px 12px;
+  height: 100%;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 300;
+
+  line-height: 50px;
+  color: #000;
+}
+
+h5 {
+  font-size: 12px;
+
+  letter-spacing: 2px;
+  color: #000;
+}
+
+p {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000;
+
+}
+
+.cursive {
+  font-family: Mak, sans-serif, serif, Arial, Helvetica;
+}
+
+.pink {
+  color: #D73171
+}
+
+.black {
+  color: #000;
+}
+
+.white {
+  color: #fff;
+}
+
+.f-mak {
+  font-family: 'Mak';
+}
+
+.f-mak-cursive {
+  font-family: 'Mak-cursive';
+}
+
+* {
+  line-height: 1.1;
+}
+
+body {
+  min-width: 280px;
+
+}
+
+// #E9518F

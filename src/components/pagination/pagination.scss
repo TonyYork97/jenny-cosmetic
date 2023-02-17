@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+.pagination {}
+
+.pagination li {
+    /* background-color: red; */
+    display: inline-block;
+    color: #fff;
+    margin-left: 8px;
+}
+
+.pagination li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid $mainPink;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.pagination li a:hover {}
+
+.pagination .selected a {
+    background-color: $mainPink;
+    color: white;
+}
+
+@media screen and (max-width:480px) {
+    .pagination li a {
+        width: 32px;
+        height: 32px;
+    }
+}
