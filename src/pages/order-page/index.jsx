@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { CartItem } from '../../components/cart-item'
 import './order.scss'
@@ -8,6 +8,11 @@ export const OrderPage = () => {
   const [shippingCost, setShippingCost] = useState('2500')
   const cartItems = useSelector(state => state.cart.cartItems);
   const totalPrice = useSelector(state => state.cart.totalPrice);
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className='order-page'>
       <div className='wrapper'>

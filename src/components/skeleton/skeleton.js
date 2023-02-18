@@ -1,9 +1,14 @@
 import React, { useState } from "react"
 import ContentLoader from "react-content-loader"
+import { useResize } from "../../hooks/useResize";
 
 export const Skeleton = (props) => {
     const [width, setWidth] = useState('100%');
-
+    const [height, setheight] = useState()
+    const { width: screenWidth } = useResize()
+    // 395px 820
+    // 285 480
+    // 275 365
     return (
         <>
             <div className="list-item">
@@ -11,7 +16,7 @@ export const Skeleton = (props) => {
                     rtl
                     speed={1}
                     width={width}
-                    height={511.5}
+                    height={screenWidth > 821 ? 508 : screenWidth > 481 ? 395 : screenWidth > 366 ? 285 : 275}
                     viewBox="0 0 100% 100%"
                     backgroundColor="#808080"
                     foregroundColor="#D73171"

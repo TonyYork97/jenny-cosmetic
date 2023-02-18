@@ -7,6 +7,7 @@ import './product-category.scss';
 export const ProductCategory = () => {
     const { items, status } = useSelector(state => state.catalog);
 
+
     return (
         <div className="product-category">
             <div className="wrapper">

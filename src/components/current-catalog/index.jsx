@@ -22,6 +22,7 @@ export const CurrentCatalog = () => {
         dispatch(fetchCatalog())
     }, []);
 
+
     useEffect(() => {
         window.scrollTo(0, 0)
 

@@ -42,7 +42,10 @@ export const Cart = ({ setCartToggle }) => {
                             ИТОГО: <span>{totalPrice} <span>руб.</span></span>
                         </div>
                         <div className="cart__order">
-                            <Link to={'/order'}>Оформить заказ</Link>
+                            <Link
+                                to={'/order'}
+                                onClick={() => setCartToggle(false)}
+                            >Оформить заказ</Link>
                         </div>
                     </div>
                     : <CartEmpty setCartToggle={setCartToggle} />}

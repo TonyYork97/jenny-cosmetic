@@ -177,7 +177,7 @@
 
 @media screen and (max-width: 820px) {
     .list-item {
-        width: 47%;
+        width: 46%;
     }
 
     .list-item__image {
@@ -194,21 +194,21 @@
 
 }
 
-@media screen and (max-width: 520px) {
-    .list-item {
-        width: 46%;
-    }
+// @media screen and (max-width: 480px) {
+//     .list-item {
+//         width: 46%;
+//     }
 
-    .list-item__image {
-        height: 240px;
-    }
+//     .list-item__image {
+//         height: 240px;
+//     }
 
-    .list-item__block button {
-        font-size: 11px;
-    }
+//     .list-item__block button {
+//         font-size: 11px;
+//     }
 
 
-}
+// }
 
 @media screen and (max-width: 480px) {
 

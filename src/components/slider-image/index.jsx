@@ -29,7 +29,7 @@ export const SliderImage = () => {
                     <div className="all-pages-container">
                         {items.length &&
                             <Carousel
-                                // autoPlay={true}
+                                autoPlay={true}
                                 emulateTouch={true}
                                 infiniteLoop={true}
                                 stopOnHover={false}
@@ -37,10 +37,9 @@ export const SliderImage = () => {
                                 showStatus={false}
                             >
                                 {items.map((el, i) => (
-                                    <div className="bg-block" >
+                                    <div className="bg-block" key={el.title} >
                                         <div className="slider-text">
                                             <div className="slider-text-block">
-                                                <span>{el.subTitle}</span>
                                                 <h2 className="f-mak">{el.title}</h2>
                                                 <p>{el.subScribtion}</p>
                                                 <Link
