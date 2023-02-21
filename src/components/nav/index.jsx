@@ -22,13 +22,22 @@ export const Nav = () => {
         }
     ];
 
+    const toggleMenu = () => {
+        setMobileMenu(!mobileMenu)
+        if (!mobileMenu) {
+            document.body.classList.add('modal-open')
+        } else {
+            document.body.classList.remove('modal-open')
+        }
+    }
+
     return (
         <div className="nav">
             <div className="nav__menu-icon">
-                <img onClick={() => setMobileMenu(true)} src={Menu} alt="" />
+                <img onClick={toggleMenu} src={Menu} alt="" />
             </div>
             {
-                mobileMenu && <NavMobile nav={nav} setMobileMenu={setMobileMenu} />
+                mobileMenu && <NavMobile nav={nav} toggleMenu={toggleMenu} />
             }
             <ul className="nav__item">
                 <li ><a className="nav__link nav__link-catalog " onClick={() => setSubMenu(!subMenu)}>КАТАЛОГ</a>

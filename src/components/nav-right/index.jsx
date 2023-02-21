@@ -16,19 +16,35 @@ export const NavRight = () => {
     const isActiveFav = favoritesToggle ? 'favorites-active' : '';
     const isActiveContainerBlock = favoritesToggle ? 'favorites__container-active' : '';
 
+    const toggleModal = () => {
+        setCartToggle(!cartToggle)
+        if (!cartToggle) {
+            document.body.classList.add('modal-open')
+        } else {
+            document.body.classList.remove('modal-open')
+        }
+    }
+    const toggleFavorites = () => {
+        setFavoritesToggle(!favoritesToggle)
+        if (!favoritesToggle) {
+            document.body.classList.add('modal-open')
+        } else {
+            document.body.classList.remove('modal-open')
+        }
+    }
 
     return (
         <div className="nav-right">
             <div className="nav-right__item">
-                <CgHeart className="nav-right__heart-icon" onClick={() => setFavoritesToggle(!favoritesToggle)} />
-                {<Favorites isActiveFav={isActiveFav} isActiveContainerBlock={isActiveContainerBlock} setFavoritesToggle={setFavoritesToggle} />}
+                <CgHeart className="nav-right__heart-icon" onClick={toggleFavorites} />
+                {<Favorites isActiveFav={isActiveFav} isActiveContainerBlock={isActiveContainerBlock} toggleFavorites={toggleFavorites} />}
             </div>
             <div className="nav-right__item">
-                <div className="nav-right__item-cart" onClick={() => setCartToggle(!cartToggle)}>
+                <div className="nav-right__item-cart" onClick={toggleModal}>
                     <CgShoppingCart className="nav-right__cart-icon" />
                     {countItems > 0 ? <span>{countItems}</span> : ''}
                 </div>
-                {cartToggle && <Cart setCartToggle={setCartToggle} />}
+                {cartToggle && <Cart toggleModal={toggleModal} />}
             </div>
         </div>
     )

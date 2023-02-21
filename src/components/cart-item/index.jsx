@@ -15,7 +15,7 @@ export const CartItem = (
         category,
         subCategory,
         subTitle,
-        setCartToggle
+        toggleModal
     }) => {
 
 
@@ -44,7 +44,7 @@ export const CartItem = (
             <div className="cart__item-image">
                 <Link
                     to={`/goods/${id}`}
-                    onClick={() => setCartToggle(false)}>
+                    onClick={toggleModal}>
                     <img src={image} alt="" />
                 </Link>
             </div>
@@ -53,7 +53,7 @@ export const CartItem = (
                     <Link
                         to={`/goods/${id}`}
                         className="white"
-                        onClick={() => setCartToggle(false)}>
+                        onClick={toggleModal}>
                         {title}
                     </Link>
                 </div>

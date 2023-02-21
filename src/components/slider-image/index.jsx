@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Carousel } from 'react-responsive-carousel'
 import Bg1 from '../../assets/sliders/slider-bg-1.jpg'
 import Bg2 from '../../assets/sliders/slider-bg-2.jpg'
-import Bg3 from '../../assets/sliders/slider-bg-3.jpg'
+import Bg3 from '../../assets/sliders/slider-bg-6.jpg'
 import Bg4 from '../../assets/sliders/slider-bg-4.jpg'
 import Bg5 from '../../assets/sliders/slider-bg-5.jpg'
 import { Link } from "react-router-dom";

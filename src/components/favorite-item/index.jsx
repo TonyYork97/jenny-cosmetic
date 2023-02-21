@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { VscChromeClose } from 'react-icons/vsc'
 import { Link } from 'react-router-dom';
 
-export const FavoriteItem = ({ setFavoritesToggle, id, title, price, image, categoty, subCategory, description }) => {
+export const FavoriteItem = ({ toggleFavorites, id, title, price, image, categoty, subCategory, description }) => {
     const dispatch = useDispatch();
 
     const deleteFavorites = () => {
@@ -12,7 +12,7 @@ export const FavoriteItem = ({ setFavoritesToggle, id, title, price, image, cate
     }
     return (
         <div className="favorites__item">
-            <Link to={`/goods/${id}`} onClick={() => setFavoritesToggle(false)}>
+            <Link to={`/goods/${id}`} onClick={toggleFavorites}>
                 <div className="favorites__image">
                     <img src={image} alt={title} />
                 </div>
@@ -20,7 +20,7 @@ export const FavoriteItem = ({ setFavoritesToggle, id, title, price, image, cate
             <div className="favorites__title-block">
 
                 <div className="favorites__title">
-                    <Link to={`/goods/${id}`} className="white" onClick={() => setFavoritesToggle(false)}>
+                    <Link to={`/goods/${id}`} className="white" onClick={toggleFavorites}>
                         {title}
                     </Link>
                 </div>
