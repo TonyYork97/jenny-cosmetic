@@ -51,10 +51,10 @@ export const Footer = () => {
                         </div>
                         <div className="footer__items">
                             <div className="footer__tel">
-                                <a href="tel:+79198163428">+7-919-816-34-28</a>
+                                <a href="tel:+79198163428">+7-000-000-00-00</a>
                             </div>
                             <div className="footer__mail">
-                                <a href="mailto:ayu2600@mail.ru" className='footer__mail-link'>ayu2600@mail.ru</a>
+                                <a href="mailto:ayu2600@mail.ru" className='footer__mail-link'>test@mail.ru</a>
                             </div>
                         </div>
                     </div>

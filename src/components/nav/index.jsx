@@ -45,12 +45,25 @@ export const Nav = () => {
                 </li>
                 {nav.map(item =>
                     <li key={item.id}>
-                        <Link
-                            to={item.link}
-                            className="nav__link"
-                        >
-                            {item.title}
-                        </Link>
+                        {item.link.includes('#')
+                        ?
+                        <a
+                        href={item.link}
+                        className="nav__link"
+                    >
+                        {item.title}
+                    </a>
+
+                    :
+                    <Link
+                    to={item.link}
+                    className="nav__link"
+                >
+                    {item.title}
+                </Link>
+                        
+                        }
+                        
                     </li>
                 )}
             </ul>
