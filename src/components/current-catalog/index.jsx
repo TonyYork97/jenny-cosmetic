@@ -70,7 +70,7 @@ export const CurrentCatalog = () => {
                         </div>
                         <div className="product-category__category">
                             {filterCatalog.length
-                                ? filterCatalog.map(item => <HomeCategory item={item} />)
+                                ? filterCatalog.map(item => <HomeCategory key={item.title} item={item} />)
                                 : ''
                             }
                         </div>

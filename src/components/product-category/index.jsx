@@ -20,7 +20,7 @@ export const ProductCategory = () => {
                     </div>
                     <div className="product-category__category">
                         {items.length
-                            ? items.map(item => <HomeCategory item={item} status={status} />)
+                            ? items.map(item => <HomeCategory key={item.title} item={item} status={status} />)
                             : ''
                         }
                     </div>

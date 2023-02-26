@@ -63,8 +63,14 @@ export const OrderPage = () => {
               }
               <div className='contact-btns'>
                 <div className='btn-group'>
-                  {currentMenu > 1 ? <button onClick={() => setCurrentMenu(currentMenu - 1)}>Назад</button> : ''}
-                  {currentMenu < 3 ? <button onClick={() => setCurrentMenu(currentMenu + 1)}>Далее</button> : ''}
+                  {currentMenu > 1 ? <button onClick={() => {
+                    setCurrentMenu(currentMenu - 1)
+                    window.scrollTo(0,0)
+                  }}>Назад</button> : ''}
+                  {currentMenu < 3 ? <button onClick={() => {
+                    setCurrentMenu(currentMenu + 1)
+                    window.scrollTo(0,0)
+                  }}>Далее</button> : ''}
                   {currentMenu === 3 ? <button>Оплатить</button> : ''}
                 </div>
               </div>
