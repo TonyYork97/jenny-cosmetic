@@ -6,30 +6,29 @@
 @import './variables.scss';
 
 @font-face {
-  font-family: "Mak";
-  src: url("../../public/fonts/Mak\ font/MAK.otf") format("opentype");
+  font-family: 'Mak';
+  src: url('../../public/fonts/Mak\ font/MAK.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Mak";
-  src: url("../../public/fonts/Mak\ font/MAK-bold.otf") format("opentype");
+  font-family: 'Mak';
+  src: url('../../public/fonts/Mak\ font/MAK-bold.otf') format('opentype');
   font-weight: bold;
   font-style: bold;
 }
 
-
 @font-face {
-  font-family: "Mak-cursive";
-  src: url("../../public/fonts/Mak\ font/Web/MAK.woff") format("woff");
+  font-family: 'Mak-cursive';
+  src: url('../../public/fonts/Mak\ font/Web/MAK.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Mak-cursive";
-  src: url("../../public/fonts/Mak\ font/Web/MAK-bold.woff") format("woff");
+  font-family: 'Mak-cursive';
+  src: url('../../public/fonts/Mak\ font/Web/MAK-bold.woff') format('woff');
   font-weight: bold;
   font-style: bold;
 }
@@ -48,7 +47,6 @@
 * {
   font-family: sans-serif, serif, Arial, Helvetica;
   letter-spacing: 1px;
-
 }
 
 *,
@@ -76,6 +74,10 @@ aside {
   display: block;
 }
 
+input {
+  font-size: 16px;
+}
+
 html,
 body {
   height: 100%;
@@ -99,7 +101,6 @@ input:hover,
 input:active,
 input:focus {
   outline: none;
-
 }
 
 input::-ms-clear {
@@ -155,7 +156,6 @@ a {
 }
 
 /*--------------------*/
-
 
 body {
   margin: 0;
@@ -213,7 +213,6 @@ p {
   font-weight: 400;
   line-height: 20px;
   color: #000;
-
 }
 
 .cursive {
@@ -221,7 +220,7 @@ p {
 }
 
 .pink {
-  color: #D73171
+  color: #d73171;
 }
 
 .black {
@@ -246,7 +245,6 @@ p {
 
 body {
   min-width: 280px;
-
 }
 
 .modal-open {

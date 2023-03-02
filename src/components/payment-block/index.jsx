@@ -24,6 +24,7 @@ export const PaymentBlock = ({ contactBlock, onChange }) => {
         onChange={onChange}
         value={contactBlock.cvv}
       />
+      <button type='submit'>Оплатить</button>
     </div>
   )
 }

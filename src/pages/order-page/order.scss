@@ -18,148 +18,146 @@
       gap: 44px;
       align-items: flex-start;
 
-      .payment-successful {
-        position: fixed;
-        z-index: 550;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba($color: #000000, $alpha: 0.8);
-
-        .payment-successful-block {
-          background: #fff;
-          max-width: 420px;
-          border-radius: 12px;
-          width: 100%;
-          padding: 24px;
-          display: flex;
-          flex-direction: column;
-          gap: 24px;
-          align-items: center;
-
-          .payment-successful-title {
-            font-size: 24px;
-          }
-
-          button {
-            background: #000;
-            color: #fff;
-            padding: 12px;
-            border-radius: 12px;
-            transition: all 0.3s ease;
-
-            &:hover {
-              background-color: rgb(83, 83, 83);
-            }
-          }
-
-          span {
-            color: #000;
-          }
-        }
-      }
-
-      .payment-error {
-        font-size: 12px;
-        color: darkred;
-        margin-bottom: 12px;
-      }
-
-      .contact-block {
+      .order-form {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 24px;
 
-        .info {
-          color: #fff;
-          font-size: 20px;
+        .payment-successful {
+          position: fixed;
+          z-index: 550;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
           display: flex;
-          flex-direction: column;
-          gap: 12px;
-          overflow: hidden;
-          min-width: 280px;
+          align-items: center;
+          justify-content: center;
+          background-color: rgba($color: #000000, $alpha: 0.8);
 
-          .info-title {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            cursor: pointer;
-            user-select: none;
-
-            .number {
-              width: 24px;
-              height: 24px;
-              border: 2px solid #fff;
-              border-radius: 100%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            }
-          }
-
-          .input-block {
-            padding-left: 36px;
+          .payment-successful-block {
+            background: #fff;
+            max-width: 420px;
+            border-radius: 12px;
+            width: 100%;
+            padding: 24px;
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            // height: 0px;
-            transition: all 0.3s ease;
+            gap: 24px;
+            align-items: center;
 
-            input {
-              padding: 12px;
-              border: 1px solid #fff;
-              border-radius: 3px;
-              background-color: transparent;
-              color: #fff;
+            .payment-successful-title {
+              font-size: 24px;
             }
-          }
-        }
-
-        .contact-btns {
-          .btn-group {
-            display: flex;
-            justify-content: space-between;
 
             button {
-              padding: 8px;
-              max-width: 90px;
-              width: 100%;
-              text-align: center;
-              background-color: $mainPink;
+              background: #000;
+              color: #fff;
+              padding: 12px;
+              border-radius: 12px;
+              transition: all 0.3s ease;
+
+              &:hover {
+                background-color: rgb(83, 83, 83);
+              }
+            }
+
+            span {
               color: #000;
             }
           }
         }
-      }
 
-      .cart-block {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-
-        h3 {
-          font-size: 20px;
-          text-decoration: underline;
+        .payment-error {
+          font-size: 12px;
+          color: darkred;
+          margin-bottom: 12px;
         }
 
-        .price-block {
+        .contact-block {
           display: flex;
           flex-direction: column;
           gap: 16px;
-          font-size: 16px;
+          button {
+            padding: 16px 8px;
+            text-align: center;
+            background-color: $mainPink;
+            color: #000;
+            width: 100%;
+            border-radius: 3px;
+          }
 
-          .price {
+          .info {
+            color: #fff;
+            font-size: 20px;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 8px;
+            flex-direction: column;
+            gap: 12px;
+            overflow: hidden;
+            min-width: 280px;
 
-            .bold {
-              font-weight: bold;
+            .info-title {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              cursor: pointer;
+              user-select: none;
+
+              .number {
+                width: 24px;
+                height: 24px;
+                border: 2px solid #fff;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+
+            .input-block {
+              padding-left: 36px;
+              display: flex;
+              flex-direction: column;
+              gap: 12px;
+              // height: 0px;
+              transition: all 0.3s ease;
+
+              input {
+                padding: 12px;
+                border: 1px solid #fff;
+                border-radius: 3px;
+                background-color: transparent;
+                color: #fff;
+              }
+            }
+          }
+        }
+
+        .cart-block {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          h3 {
+            font-size: 20px;
+            text-decoration: underline;
+          }
+
+          .price-block {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            font-size: 16px;
+
+            .price {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: 8px;
+
+              .bold {
+                font-weight: bold;
+              }
             }
           }
         }
@@ -171,6 +169,24 @@
         flex-direction: column-reverse;
         align-items: normal;
       }
+    }
+  }
+}
+
+.contact-btns {
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      padding: 8px;
+      max-width: 90px;
+      width: 100%;
+      border-radius: 3px;
+      text-align: center;
+      border: 1px solid $mainPink;
+      background-color: transparent;
+      color: #fff;
     }
   }
 }

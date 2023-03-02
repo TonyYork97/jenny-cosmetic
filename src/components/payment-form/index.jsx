@@ -34,8 +34,6 @@ export const PaymentForm = ({ currentMenu, setCurrentMenu }) => {
     setError('')
   }
 
-  console.log(contactBlock)
-
   const handleSubmit = (e) => {
     e.preventDefault()
     if (
@@ -72,91 +70,88 @@ export const PaymentForm = ({ currentMenu, setCurrentMenu }) => {
   }
 
   return (
-    <form onSubmit={(e) => e.preventDefault()}>
-      {successful && (
-        <div className='payment-successful'>
-          <div className='payment-successful-block'>
-            <div className='payment-successful-title'>
-              <span>Спасибо за заказ!</span>
+    <div className='order-form'>
+      <form onSubmit={handleSubmit}>
+        {successful && (
+          <div className='payment-successful'>
+            <div className='payment-successful-block'>
+              <div className='payment-successful-title'>
+                <span>Спасибо за заказ!</span>
+              </div>
+              <div>
+                <span>{time}</span>
+              </div>
+              <button onClick={clearOrder}>Перейти на главную</button>
             </div>
-            <div>
-              <span>{time}</span>
-            </div>
-            <button onClick={clearOrder}>Перейти на главную</button>
-          </div>
-        </div>
-      )}
-      {error && <div className='payment-error'>{error}</div>}
-      <div className='contact-block'>
-        {currentMenu === 1 ? (
-          <div className='info'>
-            <div className='info-title'>
-              <div className='number'>1</div>
-              <h3>Контактная информация</h3>
-            </div>
-            <ContactInfo
-              contactBlock={contactBlock}
-              setContactBlock={setContactBlock}
-              onChange={handleChange}
-            />
-          </div>
-        ) : currentMenu === 2 ? (
-          <div className='info'>
-            <div className='info-title'>
-              <div className='number'>2</div>
-              <h3>Доставка</h3>
-            </div>
-            <DeliveryBlock
-              contactBlock={contactBlock}
-              onChange={handleChange}
-            />
-          </div>
-        ) : (
-          <div className='info'>
-            <div className='info-title'>
-              <div className='number'>3</div>
-              <h3>Оплата</h3>
-            </div>
-            <PaymentBlock contactBlock={contactBlock} onChange={handleChange} />
           </div>
         )}
-
-        <div className='contact-btns'>
-          <div className='btn-group'>
-            {currentMenu > 1 ? (
-              <button
-                onClick={() => {
-                  setCurrentMenu(currentMenu - 1)
-                  window.scrollTo(0, 0)
-                }}
-              >
-                Назад
-              </button>
-            ) : (
-              ''
-            )}
-            {currentMenu < 3 ? (
-              <button
-                onClick={() => {
-                  setCurrentMenu(currentMenu + 1)
-                  window.scrollTo(0, 0)
-                }}
-              >
-                Далее
-              </button>
-            ) : (
-              ''
-            )}
-            {currentMenu === 3 ? (
-              <button type='submit' onClick={handleSubmit}>
-                Оплатить
-              </button>
-            ) : (
-              ''
-            )}
-          </div>
+        {error && <div className='payment-error'>{error}</div>}
+        <div className='contact-block'>
+          {currentMenu === 1 ? (
+            <div className='info'>
+              <div className='info-title'>
+                <div className='number'>1</div>
+                <h3>Контактная информация</h3>
+              </div>
+              <ContactInfo
+                contactBlock={contactBlock}
+                setContactBlock={setContactBlock}
+                onChange={handleChange}
+              />
+            </div>
+          ) : currentMenu === 2 ? (
+            <div className='info'>
+              <div className='info-title'>
+                <div className='number'>2</div>
+                <h3>Доставка</h3>
+              </div>
+              <DeliveryBlock
+                contactBlock={contactBlock}
+                onChange={handleChange}
+              />
+            </div>
+          ) : (
+            <div className='info'>
+              <div className='info-title'>
+                <div className='number'>3</div>
+                <h3>Оплата</h3>
+              </div>
+              <PaymentBlock
+                contactBlock={contactBlock}
+                onChange={handleChange}
+              />
+            </div>
+          )}
+        </div>
+      </form>
+      <div className='contact-btns'>
+        <div className='btn-group'>
+          {currentMenu > 1 ? (
+            <button
+              onClick={() => {
+                setCurrentMenu(currentMenu - 1)
+                window.scrollTo(0, 0)
+              }}
+            >
+              Назад
+            </button>
+          ) : (
+            ''
+          )}
+          {currentMenu < 3 ? (
+            <button
+              onClick={() => {
+                setCurrentMenu(currentMenu + 1)
+                window.scrollTo(0, 0)
+              }}
+            >
+              Далее
+            </button>
+          ) : (
+            ''
+          )}
         </div>
       </div>
-    </form>
+    </div>
   )
 }
